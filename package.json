@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-free": "^6.4.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
+    "sass": "^1.62.1",
     "tailwindcss": "^3.3.2",
     "vue": "^3.2.47"
   },
