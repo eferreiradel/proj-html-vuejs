@@ -1,0 +1,21 @@
+@import "./variables.scss";
+.nav--links {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav--links::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transition: opacity 0.3s ease-out;
+}
+
+.nav--links:hover::after {
+  opacity: 1;
+}

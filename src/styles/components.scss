@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+.btn--primary {
+  font-size: small;
+  background-color: black;
+  border: 1px solid white;
+  padding: 0.5em 3em;
+  border-radius: 0;
+  color: white;
+}
+.btn--primary:hover {
+  background-color: white;
+  color: black;
+}
+
+// tag
+.tag--container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  top: 20%;
+  left: 92%;
+  position: absolute;
+  .tag {
+    i {
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.643);
+    }
+    p {
+      font-size: x-small;
+      margin: 0;
+    }
+  }
+}
+.price--symbol {
+  font-size: small;
+  color: $color--priceTag;
+}
+.price {
+  font-weight: bolder;
+  font-size: larger;
+  color: $color--priceTag;
+}
