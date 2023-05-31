@@ -4,13 +4,27 @@
   font-size: small;
   background-color: black;
   border: 1px solid white;
-  padding: 0.5em 3em;
-  border-radius: 0;
   color: white;
+  padding: 1em 3em;
+  border-radius: 0;
+  transition: 0.2s;
+}
+.btn--light {
+  font-size: small;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 1em 3em;
+  border-radius: 0;
+  transition: 0.2s;
 }
 .btn--primary:hover {
   background-color: white;
   color: black;
+}
+.btn--light:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 // tag
@@ -40,4 +54,9 @@
   font-weight: bolder;
   font-size: larger;
   color: $color--priceTag;
+}
+.signature {
+  object-fit: cover;
+  height: 100%;
+  width: 35%;
 }

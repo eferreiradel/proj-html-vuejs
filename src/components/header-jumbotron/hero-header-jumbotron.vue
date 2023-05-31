@@ -1,24 +1,7 @@
 <template>
-  <section class="hero-header-jumbotron">
+  <section id="hero-header-jumbotron">
     <hero-header-nav :navLinks="navLinks"></hero-header-nav>
-    <div class="hero_header--main bg-green-500 p-5">
-      <div class="container p-5 w-75">
-        <p class="caption mb-5">
-          {{ dataStore.headerMainCaption.toUpperCase() }}
-        </p>
-        <h1 class="main-header--title mb-4">
-          {{ dataStore.headerTitle.toUpperCase() }}
-        </h1>
-        <p>
-          {{ dataStore.hederMainText }}
-        </p>
-        <div class="container p-0">
-          <a href="#" class="btn btn--primary">
-            {{ dataStore.headerMainBtn.toLocaleUpperCase() }}
-          </a>
-        </div>
-      </div>
-    </div>
+    <infoContainer></infoContainer>
     <div class="hero_header--slider">
       <div class="tag--container">
         <button class="btn btn-light tag p-2">
@@ -44,6 +27,8 @@
 // store
 import { dataStore } from "../../stores/store";
 import heroHeaderNav from "./hero-header-nav.vue";
+// components
+import infoContainer from "./info-container.vue";
 
 export default {
   name: "heroHeaderjumbotron",
@@ -80,7 +65,58 @@ export default {
   },
   components: {
     heroHeaderNav,
+    infoContainer,
   },
 };
 </script>
-<style></style>
+<style scoped lang="scss">
+@import "../../styles/variables.scss";
+#hero-header-jumbotron {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(61, 121, 173);
+  position: relative;
+  display: flex;
+  .hero_header--main {
+    flex: 4;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    .caption {
+      position: relative;
+      font-family: sans-serif;
+      font-size: small;
+    }
+    .caption::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      left: -80px;
+      bottom: 50%;
+      background-color: white;
+    }
+    .container {
+      margin-top: $navbar--height;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+  }
+  .hero_header--slider {
+    position: relative;
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .slider-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+</style>

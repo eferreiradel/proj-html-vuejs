@@ -1,0 +1,12 @@
+COPY and paste this in new components:
+
+<template></template>
+<script>
+export default {
+    name:"",
+    
+}
+</script>
+<style lang="scss">
+@import "./variables.scss";
+</style>
