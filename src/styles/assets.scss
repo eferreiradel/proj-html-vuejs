@@ -1,5 +1,18 @@
 @import "./variables.scss";
 
+h1 {
+  text-transform: uppercase;
+}
+
+button {
+  text-transform: uppercase;
+}
+.caption {
+  position: relative;
+  font-family: sans-serif;
+  font-size: small;
+}
+
 .btn--primary {
   font-size: small;
   background-color: black;
@@ -12,6 +25,15 @@
 .btn--light {
   font-size: small;
   background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 1em 3em;
+  border-radius: 0;
+  transition: 0.2s;
+}
+.btn--transparent {
+  font-size: small;
+  background-color: rgba(255, 255, 255, 0);
   border: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   padding: 1em 3em;
@@ -59,4 +81,15 @@
   object-fit: cover;
   height: 100%;
   width: 35%;
+}
+.votes {
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.line-thin-short {
+  background-color: white;
+  height: 1px;
+  width: 20%;
 }

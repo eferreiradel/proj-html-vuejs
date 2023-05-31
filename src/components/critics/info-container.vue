@@ -1,19 +1,27 @@
 <template>
   <div class="main">
     <div class="row justify-content-center">
-      <div class="col-7 d-flex flex-column gap-2 info-container p-0">
+      <div class="col-8 d-flex flex-column gap-2 info-container">
         <p class="caption mb-5">
-          {{ exploreTheMenuStore.mainCaption.toUpperCase() }}
+          {{ criticsStore.author.toUpperCase() }}
         </p>
         <h1 class="title mb-4">
-          {{ exploreTheMenuStore.mainCaption.toUpperCase() }}
+          {{ criticsStore.mainCaption.toUpperCase() }}
         </h1>
+        <div class="container votes">
+          <i
+            v-for="index in votes.newYorkTimes"
+            :key="index"
+            class="fas fa-star"
+          ></i>
+        </div>
+        <div class="line-thin-short my-5"></div>
         <p class="mb-5">
-          {{ exploreTheMenuStore.paragraph }}
+          {{ criticsStore.paragraph }}
         </p>
         <div class="container p-0">
           <a href="#" class="btn btn--primary">
-            {{ exploreTheMenuStore.buttonText.toUpperCase() }}
+            {{ criticsStore.buttonText.toUpperCase() }}
           </a>
         </div>
       </div>
@@ -22,13 +30,14 @@
 </template>
 
 <script>
-import { exploreTheMenuStore } from "../../stores/store";
-import { dataStore } from "../../stores/store";
+import { criticsStore } from "../../stores/components-store";
+import { votes } from "../../stores/components-store";
 export default {
   name: "infoContainer",
   data() {
     return {
-      exploreTheMenuStore,
+      criticsStore,
+      votes,
     };
   },
 };
@@ -50,22 +59,6 @@ export default {
   height: 100%;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-
-  .caption {
-    position: relative;
-    font-family: sans-serif;
-    font-size: small;
-  }
-  .caption::before {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 1px;
-    left: -80px;
-    bottom: 50%;
-    background-color: white;
-  }
 
   .row {
   }
