@@ -1,28 +1,30 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-7 p-0">
-        <slider></slider>
+  <div class="container-fluid p-0">
+    <div class="row p-0">
+      <div class="col-7 column-right p-0">
+        <hero></hero>
       </div>
-      <div class="col-5 p-0">
-        <info-container></info-container>
+      <div class="col-5 column-left p-0 bg-black">
+        <info-column></info-column>
       </div>
     </div>
   </div>
 </template>
 <script>
-import infoContainer from "./info-container.vue";
-import slider from "./slider.vue";
+import infoColumn from "./components/info-column.vue";
+import hero from "./components/hero.vue";
+
 export default {
   name: "exploreTheMenu",
-  data() {
-    return {};
-  },
   components: {
-    slider,
-    infoContainer,
+    infoColumn,
+    hero,
   },
 };
 </script>
-
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.column-left {
+  display: flex;
+  align-items: center;
+}
+</style>

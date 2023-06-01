@@ -1,25 +1,29 @@
 <template>
-  <hero-header-jumbotron> </hero-header-jumbotron>
-  <info-section></info-section>
+  <jumbotron-header></jumbotron-header>
+  <infoSection></infoSection>
   <explore-the-menu></explore-the-menu>
-  <critics></critics>
+  <banner></banner>
+  <section-reviews></section-reviews>
+  <banner-poster></banner-poster>
 </template>
 
 <script>
-import { dataStore } from "./stores/store";
-// components
-import heroHeaderJumbotron from "./components/header-jumbotron/hero-header-jumbotron.vue";
+import jumbotronHeader from "./components/jumbotron-header/jumbotron-header.vue";
 import infoSection from "./components/info-section/info-section.vue";
 import exploreTheMenu from "./components/explore-the-menu/explore-the-menu.vue";
-import critics from "./components/critics/critics.vue";
+import banner from "./components/reusables/banner.vue";
+import sectionReviews from "./components/section-reviews/section-reviews.vue";
+import bannerPoster from "./components/banner-poster.vue";
 export default {
   name: "App",
   mounted() {},
   components: {
-    heroHeaderJumbotron,
+    jumbotronHeader,
     infoSection,
     exploreTheMenu,
-    critics,
+    banner,
+    sectionReviews,
+    bannerPoster,
   },
 };
 </script>

@@ -1,12 +1,19 @@
+.nav-link {
+  color: white;
+  font-size: small;
+}
+
 h1 {
-  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
   font-weight: bolder;
 }
 h2 {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
   font-weight: bolder;
@@ -16,13 +23,33 @@ h2 {
   font-weight: bolder;
 }
 .subtitle {
+  font-size: 2.5rem;
+
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
+}
+.banner {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
 }
 p {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
   //   font-family: "Times New Roman", Times, serif;
+}
+.paragraph {
+  color: white;
+}
+.pricetag {
+  color: white;
+  font-size: small;
+  font-family: sans-serif;
+}
+.caption {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: smaller;
+  text-transform: uppercase;
 }
 .bolder {
   font-weight: bolder;
