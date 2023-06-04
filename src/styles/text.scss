@@ -1,30 +1,75 @@
-.nav-link {
-  color: white;
-  font-size: small;
-}
+@import "./variables.scss";
 
+.nav-link {
+  color: $color-tertiary;
+}
+.caption--light {
+  color: $color-tertiary;
+  text-transform: uppercase;
+  font-size: smaller;
+}
 h1 {
-  color: white;
+  color: $color-secondary;
   text-transform: uppercase;
   font-size: 4rem;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
   font-weight: bolder;
 }
-h2 {
+.subtitle--light {
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bolder;
+}
+.subtitle--light {
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bolder;
+}
+.subheading--dark {
   text-transform: uppercase;
   font-size: 1.5rem;
+  color: black;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
+}
+
+.subheading--light {
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: $color-secondary;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
+}
+
+.subtitle--light {
+  color: $color-secondary;
+  text-transform: uppercase;
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bolder;
+}
+.subtitle--dark {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bolder;
+}
+// menu
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .title--secondary {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: bolder;
-}
-.subtitle {
-  font-size: 2.5rem;
-
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
 }
@@ -35,18 +80,20 @@ h2 {
 }
 p {
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
+
   //   font-family: "Times New Roman", Times, serif;
 }
 .paragraph {
-  color: white;
+  color: $color-secondary;
 }
 .pricetag {
-  color: white;
+  color: $color-secondary;
   font-size: small;
   font-family: sans-serif;
 }
 .caption {
+  color: $color-secondary;
   font-family: "Barlow Condensed", sans-serif;
   font-size: smaller;
   text-transform: uppercase;

@@ -7,9 +7,15 @@
       />
     </div>
     <nav class="d-flex gap-5">
-      <a class="nav-link" href="#" v-for="link in navItems">{{
-        link.linkRef
-      }}</a>
+      <a
+        class="nav-link"
+        @click="scrollToSection(link.destination)"
+        :href="`#${link.destination}`"
+        v-for="link in navItems"
+        :key="link.linkRef"
+      >
+        {{ link.linkRef }}
+      </a>
     </nav>
   </div>
 </template>

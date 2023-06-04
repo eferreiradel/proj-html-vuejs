@@ -1,4 +1,5 @@
 import { createApp } from "vue";
+import { MotionPlugin } from "@vueuse/motion";
 
 // styles
 import "./styles/main.scss";

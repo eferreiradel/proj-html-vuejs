@@ -24,7 +24,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.hover-poster--container {
+  background-color: rgba(0, 0, 0, 0.207);
+  height: 100%;
+}
 img {
   height: 37rem;
 }

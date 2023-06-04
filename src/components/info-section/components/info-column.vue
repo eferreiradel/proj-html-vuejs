@@ -5,20 +5,21 @@
         <div class="col-12 content py-3">
           <div class="container p-0">
             <p class="">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Asperiores iste doloribus cum adipisci.adipisicing elit.
-              Asperiores iste doloribus cum adipisci
+              To complement your culinary journey, our knowledgeable staff will
+              guide you through an extensive sake menu, featuring an exquisite
+              collection of traditional and rare sake varieties. From crisp and
+              refreshing Junmai
             </p>
           </div>
           <div class="container p-0">
-            <h2 class="title text-black">
+            <h2 class="subtitle--dark text-black">
               food is our common ground, a universal experience
             </h2>
           </div>
           <div class="cotainer p-0 paragraph">
             <p class="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur.Lorem ipsum dolor sit amet consectetur adipisicing
+              Immerse yourself in the serene ambiance of our elegant dining
+              space, adorned with cherry blossom
             </p>
           </div>
           <div class="container p-0">
@@ -47,6 +48,7 @@ export default {
 }
 img {
   width: 35%;
+  mix-blend-mode: multiply;
 }
 .content {
   display: flex;

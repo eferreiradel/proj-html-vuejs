@@ -8,7 +8,7 @@ export const jumbotronHeaderStore = reactive({
     },
     {
       linkRef: "Culinary History",
-      destination: "",
+      destination: "infoSection",
     },
     {
       linkRef: "Our Team",
@@ -16,7 +16,7 @@ export const jumbotronHeaderStore = reactive({
     },
     {
       linkRef: "Takeout",
-      destination: "",
+      destination: "takeOut",
     },
     {
       linkRef: "Bulletin",

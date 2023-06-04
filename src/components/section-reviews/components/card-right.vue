@@ -5,10 +5,10 @@
       <div class="card-container">
         <div class="col-11 content p-5">
           <div class="container p-0">
-            <span class="caption text-white"> meggy stewart </span>
+            <span class="caption--light"> meggy stewart </span>
           </div>
           <div class="container p-0">
-            <h1 class="subtitle">globe and mail</h1>
+            <span class="subtitle--light">globe and mail</span>
           </div>
           <div class="votes-container">
             <i class="fa fa-solid fa-star"></i>

@@ -1,22 +1,25 @@
 <template>
   <div class="container-fluid main">
-    <div class="container">
+    <div class="container p-0">
       <div class="row p-0 justify-content-center p-5">
-        <div class="col-7 content p-0">
+        <div class="col-9 content p-0">
           <div class="container p-0">
-            <span class="caption--light"> the best table in town </span>
+            <span class="caption--light"> enjoy your meal at home</span>
           </div>
           <div class="container p-0">
-            <h1 class="title">fine dining experience</h1>
+            <h1 class="title">takeout now available</h1>
           </div>
           <div class="cotainer p-0 paragraph">
             <p>
-              Where the aroma of freshly prepared sushi fills the air, and the
-              meticulous craftsmanship of our skilled sushi chefs is on display
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur.
             </p>
           </div>
           <div class="container p-0">
-            <button class="btn btn--dark">explore the menu</button>
+            <button class="btn btn--dark">
+              <i class="fa-solid fa-car"></i>
+              view takeout menu
+            </button>
           </div>
         </div>
       </div>

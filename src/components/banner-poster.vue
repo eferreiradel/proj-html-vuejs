@@ -7,7 +7,6 @@
           >{{ menu.kungPaoChicken.item }} -
           {{ menu.kungPaoChicken.price }}$</span
         >
-        <!-- Content for the card -->
       </div>
     </div>
   </div>

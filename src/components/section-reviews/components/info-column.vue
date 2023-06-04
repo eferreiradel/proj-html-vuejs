@@ -4,10 +4,10 @@
       <div class="row p-0 justify-content-center p-5">
         <div class="col-11 content p-0">
           <div class="container p-0">
-            <span class="caption text-white"> meggy stewart </span>
+            <span class="caption--light"> meggy stewart </span>
           </div>
           <div class="container p-0">
-            <h1 class="subtitle">NEW YORK TIMES</h1>
+            <span class="subtitle--light">NEW YORK TIMES</span>
           </div>
           <div class="votes-container">
             <i class="fa fa-solid fa-star"></i>
@@ -25,7 +25,7 @@
             </p>
           </div>
           <div class="container p-0">
-            <button class="btn btn--dark">explore the menu</button>
+            <button class="btn btn--dark">read full article</button>
           </div>
         </div>
       </div>
