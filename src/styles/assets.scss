@@ -1,4 +1,18 @@
 @import "./variables.scss";
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.338);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
 
 .banner {
   width: 100%;
@@ -38,11 +52,11 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: -50px; /* Adjust the distance of the line from the text */
+  left: -50px;
   transform: translateY(-50%);
-  width: 10%; /* Adjust the thickness of the line */
-  height: 1px; /* Adjust the height of the line */
-  background-color: $color-tertiary; /* Adjust the color of the line */
+  width: 10%;
+  height: 1px;
+  background-color: $color-tertiary;
 }
 .img-container {
   width: 100%;
@@ -52,7 +66,7 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 1) 33%,
+      rgba(0, 0, 0, 1) 2%,
       rgba(136, 136, 136, 0) 94%,
       rgba(255, 255, 255, 0) 100%
     );
