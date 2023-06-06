@@ -30,6 +30,20 @@
     object-fit: cover;
   }
 }
+.container-caption {
+  position: relative;
+}
+
+.container-caption::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50px; /* Adjust the distance of the line from the text */
+  transform: translateY(-50%);
+  width: 10%; /* Adjust the thickness of the line */
+  height: 1px; /* Adjust the height of the line */
+  background-color: $color-tertiary; /* Adjust the color of the line */
+}
 .img-container {
   width: 100%;
   height: 100%;
@@ -74,12 +88,13 @@
   position: absolute;
   top: 0;
   width: 100%;
+  height: 100%;
 
   background: rgb(0, 0, 0);
   background: linear-gradient(
     360deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.7189469537815126) 52%
+    rgba(0, 0, 0, 0.7189469537815126) 70%
   );
   transition: opacity 0.2s;
 
@@ -116,7 +131,7 @@
 }
 
 .btn--dark {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $color-main;
   border: 1px solid $color-secondary;
   color: $color-secondary;
   text-transform: uppercase;
@@ -127,13 +142,13 @@
 
   &:hover {
     background-color: $color-secondary;
-    color: black;
+    color: $color-main;
   }
 }
 .btn--light {
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid rgb(214, 214, 214);
-  color: rgb(87, 87, 87);
+  border: $color-secondary;
+  color: $color-main;
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.5rem 1rem;
@@ -142,7 +157,7 @@
 
   &:hover {
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: $color-secondary;
   }
 }
 .underline {

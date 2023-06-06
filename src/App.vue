@@ -71,13 +71,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.fade-in-enter-active,
-.fade-in-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s;
 }
 
-.fade-in-enter,
-.fade-in-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>

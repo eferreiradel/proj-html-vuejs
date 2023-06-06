@@ -6,7 +6,7 @@
       alt=""
     />
     <div class="container-fluid hover-poster--container p-3">
-      <span class="text-white">
+      <span class="pricetag">
         California Rolls {{ menu.californiaRolls.price }}$
       </span>
     </div>
@@ -25,10 +25,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.hover-poster--container {
-  background-color: rgba(0, 0, 0, 0.207);
-  height: 100%;
-}
 img {
   height: 37rem;
 }

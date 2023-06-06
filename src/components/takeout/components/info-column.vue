@@ -3,7 +3,7 @@
     <div class="container p-0">
       <div class="row p-0 justify-content-center p-5">
         <div class="col-9 content p-0">
-          <div class="container p-0">
+          <div class="container-caption p-0">
             <span class="caption--light"> enjoy your meal at home</span>
           </div>
           <div class="container p-0">

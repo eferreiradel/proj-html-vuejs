@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row p-0 justify-content-center p-5">
         <div class="col-7 content p-0">
-          <div class="container p-0">
+          <div class="container-caption p-0">
             <span class="caption--light"> the best table in town </span>
           </div>
           <div class="container p-0">
@@ -15,9 +15,9 @@
               meticulous craftsmanship of our skilled sushi chefs is on display
             </p>
           </div>
-          <div class="container p-0">
-            <button class="btn btn--dark">explore the menu</button>
-          </div>
+          <button @click="scrollToSection('menu')" class="btn btn--dark">
+            explore the menu
+          </button>
         </div>
       </div>
     </div>
@@ -28,6 +28,14 @@ export default {
   name: "infoColumn",
   data() {
     return {};
+  },
+  methods: {
+    scrollToSection(section) {
+      const target = document.querySelector(`#${section}`);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>

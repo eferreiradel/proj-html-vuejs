@@ -95,7 +95,7 @@ export const menuItems = reactive({
           item: "café au lait",
           description:
             "Classic French coffee beverage that captures the essence of simplicity and elegance",
-          price: 48,
+          price: 6,
         },
       ],
     },

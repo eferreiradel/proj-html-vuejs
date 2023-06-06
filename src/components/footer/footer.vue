@@ -13,7 +13,7 @@
             facilis voluptatum
           </p>
         </div>
-        <div class="icon--row p-0 d-flex gap-2 justify-content-center">
+        <div class="icon--row p-0 gap-5 d-flex justify-content-center">
           <a class="icon--container text-black" v-for="icon in icons">
             <i :class="icon.icon"></i>
           </a>
@@ -49,6 +49,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "../../styles/variables.scss";
 .main {
   display: flex;
   flex-direction: column;
@@ -79,6 +80,6 @@ export default {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: $color-secondary;
 }
 </style>

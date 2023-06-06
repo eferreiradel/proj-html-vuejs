@@ -1,7 +1,28 @@
 @import "./variables.scss";
 
 .nav-link {
+  position: relative; /* Required for positioning pseudo-element */
   color: $color-tertiary;
+  transition: scale 1s ease-in-out;
+  &:hover {
+    color: $color-tertiary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-tertiary;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1); /* Show the underline on hover */
+  }
 }
 .caption--light {
   color: $color-tertiary;
@@ -74,7 +95,6 @@ h1 {
   font-weight: bolder;
 }
 .banner {
-  font-size: 2rem;
   text-transform: uppercase;
   font-family: "Cormorant Garamond", serif;
 }
@@ -88,8 +108,7 @@ p {
   color: $color-secondary;
 }
 .pricetag {
-  color: $color-secondary;
-  font-size: small;
+  color: $color-tertiary;
   font-family: sans-serif;
 }
 .caption {
