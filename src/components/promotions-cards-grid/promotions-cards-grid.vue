@@ -7,19 +7,19 @@
             <div class="row card-grid py-0 mx-0">
               <div class="col-4 card--container px-3" v-for="card in cards">
                 <div class="content--container">
-                  <div class="shade">
-                    <div class="img-container">
+                  <div class="img-container">
+                    <div class="shade">
                       <div class="container text-center p-0">
                         <i class="fa-solid fa-link"></i>
                       </div>
                       <a class="subheading--light">{{ card.caption }}</a>
                     </div>
                     <img :src="card.image" />
-                  </div>
-                  <div class="link--container py-4 text-center">
-                    <span class="subheading--dark">
-                      {{ card.caption }}
-                    </span>
+                    <div class="link--container py-4 text-center">
+                      <span class="subheading--dark">
+                        {{ card.caption }}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -61,8 +61,9 @@ export default {
 @import "../../styles/variables.scss";
 
 .content--container {
+  overflow-y: hidden;
   position: relative;
-  height: 40em;
+  height: 40rem;
 }
 .shade {
   display: flex;
@@ -79,8 +80,8 @@ export default {
 }
 .card--container {
   &:hover {
-    .img-container {
-      height: 100%;
+    .link--container {
+      transform: translatey(500px);
     }
     .shade {
       opacity: 1;
@@ -91,11 +92,13 @@ export default {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 85%;
+    height: 100%;
     transition: height 0.2s ease-in;
   }
 
   .link--container {
+    background-color: $color-secondary;
+    transition: all 1s;
     position: absolute;
     bottom: 0;
     left: 0;
